@@ -1,0 +1,8 @@
+.DS_Store
+.env
+deploy.env
+event.json
+node_modules
+dist/*
+!dist/.gitkeep
+*.log
