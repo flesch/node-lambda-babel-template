@@ -10,13 +10,19 @@ This project adds [webpack](http://webpack.github.io/) and [Babel](https://babel
 
 ## Getting Started
 
-To get started, clone this repository, remove the `.git` folder and initialize a new repository so that you're starting fresh.
+To get started, download the template files.
 
 ```bash
-$ git clone --depth 1 https://github.com/flesch/node-es2015-lambda-template.git
-$ cd node-es2015-lambda-template
+$ curl -o- https://codeload.github.com/flesch/node-lambda-babel-template/tar.gz/v1.0.1 | tar zxf -
+$ cd node-lambda-babel-template-1.0.1
+```
+
+Or clone this repository and remove the `.git` folder.
+
+```bash
+$ git clone --depth 1 https://github.com/flesch/node-lambda-babel-template.git
+$ cd node-lambda-babel-template
 $ rm -rf .git
-$ git init
 ```
 
 Next, install the dependencies.
