@@ -1,6 +1,6 @@
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/13259/13648628/3af893a8-e5ff-11e5-9b24-5cb32671f799.png" width="150"></p>
 
-# node-lambda-babel-template
+# node-lambda-babel-template ![npm](https://img.shields.io/npm/v/node-lambda-babel-template.svg) ![dependencies](https://david-dm.org/flesch/node-lambda-babel-template.svg)
 
 This project adds [webpack](http://webpack.github.io/) and [Babel](https://babeljs.io/) to **@motdotla**'s [node-lambda-template](https://github.com/motdotla/node-lambda-template) so you can run the lastest version of Javascript on [AWS Lambda](http://aws.amazon.com/lambda/).
 
@@ -82,4 +82,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
