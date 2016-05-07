@@ -2,9 +2,9 @@
 
 import { name, version } from './package.json';
 
-export default (event, context) => {
+export default (event, context, callback) => {
   console.log('event:', event);
   console.log('context:', context);
   console.log('env:', process.env);
-  context.done(null, { name, version });
+  callback(null, { name, version });
 }
