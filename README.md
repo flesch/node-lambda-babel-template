@@ -13,8 +13,8 @@ This project adds [webpack](http://webpack.github.io/) and [Babel](https://babel
 To get started, download the template files.
 
 ```bash
-$ curl -o- https://codeload.github.com/flesch/node-lambda-babel-template/tar.gz/v1.0.1 | tar zxf -
-$ cd node-lambda-babel-template-1.0.1
+$ curl -o- https://codeload.github.com/flesch/node-lambda-babel-template/tar.gz/v2.0.0 | tar zxf -
+$ cd node-lambda-babel-template-2.0.0
 ```
 
 Or clone this repository and remove the `.git` folder.
@@ -31,7 +31,7 @@ Next, install the dependencies.
 $ npm install
 ```
 
-The `postinstall` npm hook will run `node-lambda setup`, giving you the `event.json`, `.env`, and `deploy.env` files.
+The `postinstall` npm hook will run `node-lambda setup`, giving you the `context.json`, `event.json`, `.env`, and `deploy.env` files.
 
 See <https://github.com/motdotla/node-lambda#setup> for more details.
 
