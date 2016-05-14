@@ -1,7 +1,7 @@
 {
   "name": "node-lambda-babel-template",
   "description": "An AWS Lambda boilerplate with ES2015 support.",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "author": "John Flesch <john@fles.ch>",
   "bugs": {
     "url": "https://github.com/flesch/node-lambda-babel-template/issues"
@@ -37,7 +37,7 @@
     "url": "git+https://github.com/flesch/node-lambda-babel-template.git"
   },
   "scripts": {
-    "deploy": "node-lambda deploy --handler dist/index.default --configFile deploy.env --environment production",
+    "deploy": "node-lambda deploy --handler dist/index.default --configFile deploy.env --functionName $npm_package_name --description \"$npm_package_description\"",
     "lambda": "node-lambda",
     "postinstall": "node-lambda setup",
     "predeploy": "NODE_ENV=production webpack -p",
