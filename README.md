@@ -13,16 +13,13 @@ This project adds [webpack](http://webpack.github.io/) and [Babel](https://babel
 To get started, download the template files.
 
 ```bash
-$ curl -o- https://codeload.github.com/flesch/node-lambda-babel-template/tar.gz/v2.0.0 | tar zxf -
-$ cd node-lambda-babel-template-2.0.0
+$ DIR=node-lambda-babel-template VERSION=2.1.0 && mkdir $DIR && curl -o- https://codeload.github.com/flesch/$DIR/tar.gz/v$VERSION | tar zxf - --directory $DIR --strip-components=1 && cd $DIR
 ```
 
 Or clone this repository and remove the `.git` folder.
 
 ```bash
-$ git clone --depth 1 https://github.com/flesch/node-lambda-babel-template.git
-$ cd node-lambda-babel-template
-$ rm -rf .git
+$ git clone --depth 1 https://github.com/flesch/node-lambda-babel-template.git && cd node-lambda-babel-template && rm -rf .git
 ```
 
 Next, install the dependencies.
