@@ -52,7 +52,7 @@ $ npm start
 
 Modify `webpack.config.js` and `.babelrc` to add addtional plugins and presets.
 
-You can **test** your changes with by running:
+You can **test** your changes by running:
 
 ```bash
 $ npm test
@@ -78,7 +78,7 @@ The `predeploy` npm hook will recompile `index.js` using Webpack in production m
 
 ### <a name="ribjyr1g9l">Latest Release Download</a>
 
-<https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/> uses is an AWS Lambda function created with this template (:dog2: meta) that pulls the latest release's `tarball_url` from the GitHub API. The full source is here:
+<https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/> is an AWS Lambda function created with this template (:dog2: meta) that pulls the latest release's `tarball_url` from the GitHub API. The full source is here:
 
 ```javascript
 'use strict';
