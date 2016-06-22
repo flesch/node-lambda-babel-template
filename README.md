@@ -10,11 +10,19 @@ This project adds [webpack](http://webpack.github.io/) and [Babel](https://babel
 
 ## Getting Started
 
-To get started, download the template files.
+To get started, download the latest template files:
 
 ```bash
-$ DIR=node-lambda-babel-template VERSION=2.1.0 && mkdir $DIR && curl -o- https://codeload.github.com/flesch/$DIR/tar.gz/v$VERSION | tar zxf - --directory $DIR --strip-components=1 && cd $DIR
+DIR=node-lambda-babel-template && mkdir $DIR && curl -L -o- $(curl https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/) | tar zxf - --directory $DIR --strip-components=1 && cd $DIR
 ```
+
+<https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/> <sup><a href="#ribjyr1g9l">(source)</a></sup> will respond with the `tarball_url` of the `latest` release. To download a specific release, use the following:
+
+```bash
+$ DIR=node-lambda-babel-template VERSION=2.1.0 && mkdir $DIR && curl -o- https://codeload.github.com/flesch/node-lambda-babel-template/tar.gz/v$VERSION | tar zxf - --directory $DIR --strip-components=1 && cd $DIR
+```
+
+The template will be downloaded and extracted to what you define as `$DIR` (defaulting to `node-lambda-babel-template`). Update `DIR=node-lambda-babel-template` to change this.
 
 Or clone this repository and remove the `.git` folder.
 
@@ -67,6 +75,19 @@ The `predeploy` npm hook will recompile `index.js` using Webpack in production m
 * <https://github.com/motdotla/node-lambda>
 * <https://github.com/motdotla/node-lambda-template>
 * <http://kennbrodhagen.net/2015/12/06/how-to-create-a-request-object-for-your-lambda-event-from-api-gateway/>
+
+### <a name="ribjyr1g9l">https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/</a>
+
+```javascript
+'use strict';
+import { get } from 'gh-got';
+export default (event, context, callback) => {
+  get('repos/flesch/node-lambda-babel-template/releases/latest').then(res => {
+    let { tarball_url } = res.body;
+    callback(null, tarball_url);
+  });
+}
+```
 
 ## License
 
