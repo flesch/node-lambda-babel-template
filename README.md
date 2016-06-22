@@ -16,7 +16,7 @@ To get started, download the latest template files:
 DIR=node-lambda-babel-template && mkdir $DIR && curl -L -o- $(curl https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/) | tar zxf - --directory $DIR --strip-components=1 && cd $DIR
 ```
 
-<https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/> <sup><a href="#ribjyr1g9l">(source)</a></sup> will respond with the `tarball_url` of the `latest` release. To download a specific release, use the following:
+<https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/> will respond with the `tarball_url` of the `latest` release <a href="#ribjyr1g9l">(source)</a>. To download a specific release, use the following:
 
 ```bash
 $ DIR=node-lambda-babel-template VERSION=2.1.0 && mkdir $DIR && curl -o- https://codeload.github.com/flesch/node-lambda-babel-template/tar.gz/v$VERSION | tar zxf - --directory $DIR --strip-components=1 && cd $DIR
@@ -76,7 +76,9 @@ The `predeploy` npm hook will recompile `index.js` using Webpack in production m
 * <https://github.com/motdotla/node-lambda-template>
 * <http://kennbrodhagen.net/2015/12/06/how-to-create-a-request-object-for-your-lambda-event-from-api-gateway/>
 
-### <a name="ribjyr1g9l">https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/</a>
+### <a name="ribjyr1g9l">Latest Release Download</a>
+
+<https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/> uses is an AWS Lambda function created with this template (:dog2: meta) that pulls the latest release's `tarball_url` from the GitHub API. The full source is here:
 
 ```javascript
 'use strict';
@@ -88,6 +90,11 @@ export default (event, context, callback) => {
   });
 }
 ```
+
+```bash
+$ curl https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/
+```
+
 
 ## License
 
