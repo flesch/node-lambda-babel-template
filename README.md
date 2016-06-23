@@ -13,16 +13,19 @@ This project adds [webpack](http://webpack.github.io/) and [Babel](https://babel
 To get started, download the latest template files:
 
 ```bash
-DIR=node-lambda-babel-template && mkdir $DIR && curl -L -o- $(curl https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/) | tar zxf - --directory $DIR --strip-components=1 && cd $DIR
+$ curl -o- https://io.fles.ch/node-lambda-babel-template/latest | bash
 ```
 
-<https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/> will respond with the `tarball_url` of the `latest` release <a href="#ribjyr1g9l">(source)</a>. To download a specific release, use the following:
+> Before running the command above, please take a look at <https://io.fles.ch/node-lambda-babel-template/latest> directly. Piping anything unknown through `bash` can be dangerous!
+>
+> The install script is created using this: <https://gist.github.com/flesch/8ed6f47942350e858ebd3283e10f8a9b>.
+
+
+To download a specific release, use the following:
 
 ```bash
-$ DIR=node-lambda-babel-template VERSION=2.1.0 && mkdir $DIR && curl -o- https://codeload.github.com/flesch/node-lambda-babel-template/tar.gz/v$VERSION | tar zxf - --directory $DIR --strip-components=1 && cd $DIR
+$ curl -o- https://io.fles.ch/node-lambda-babel-template/v2.1.0 | bash
 ```
-
-The template will be downloaded and extracted to what you define as `$DIR` (defaulting to `node-lambda-babel-template`). Update `DIR=node-lambda-babel-template` to change this.
 
 Or clone this repository and remove the `.git` folder.
 
@@ -75,25 +78,6 @@ The `predeploy` npm hook will recompile `index.js` using Webpack in production m
 * <https://github.com/motdotla/node-lambda>
 * <https://github.com/motdotla/node-lambda-template>
 * <http://kennbrodhagen.net/2015/12/06/how-to-create-a-request-object-for-your-lambda-event-from-api-gateway/>
-
-### <a name="ribjyr1g9l">Latest Release Download</a>
-
-<https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/> is an AWS Lambda function created with this template (:dog2: meta) that pulls the latest release's `tarball_url` from the GitHub API. The full source is here:
-
-```javascript
-'use strict';
-import { get } from 'gh-got';
-export default (event, context, callback) => {
-  get('repos/flesch/node-lambda-babel-template/releases/latest').then(res => {
-    let { tarball_url } = res.body;
-    callback(null, tarball_url);
-  });
-}
-```
-
-```bash
-$ curl https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/latest/
-```
 
 
 ## License
