@@ -1,8 +1,8 @@
 'use strict';
 
-var path = require('path');
-var externals = require('webpack-node-externals');
-var pkg = require('./package.json');
+const path = require('path');
+const externals = require('webpack-node-externals');
+const pkg = require('./package.json');
 
 module.exports = {
   entry: ['babel-polyfill', path.resolve(__dirname, pkg.main)],
