@@ -39,9 +39,11 @@
   "scripts": {
     "deploy": "node-lambda deploy --handler dist/index.default --configFile deploy.env --functionName $npm_package_name --description \"$npm_package_description\"",
     "lambda": "node-lambda",
+    "package": "node-lambda package --handler dist/index.default --configFile deploy.env --functionName $npm_package_name --excludeGlobs \"./index.js webpack.config.js context.json event.json .babelrc .nvmrc .gitignore LICENSE.md README.md\"",
     "postinstall": "node-lambda setup",
     "predeploy": "NODE_ENV=production webpack -p",
     "pretest": "webpack",
+    "setup": "node-lambda setup",
     "start": "webpack --watch",
     "test": "eval $([ -f deploy.env ] && cat deploy.env) node-lambda run --handler dist/index.default",
     "webpack": "webpack"
