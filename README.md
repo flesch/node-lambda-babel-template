@@ -1,6 +1,11 @@
 <p align="center"><img src="https://cloud.githubusercontent.com/assets/13259/13648628/3af893a8-e5ff-11e5-9b24-5cb32671f799.png" width="150"></p>
 
-# node-lambda-babel-template ![npm](https://img.shields.io/npm/v/node-lambda-babel-template.svg) ![dependencies](https://david-dm.org/flesch/node-lambda-babel-template.svg)
+# node-lambda-babel-template
+
+[![NPM version](https://img.shields.io/npm/v/node-lambda-babel-template.svg)](https://www.npmjs.com/package/node-lambda-babel-template)
+[![Dependencies](https://david-dm.org/flesch/node-lambda-babel-template.svg)](https://david-dm.org/flesch/node-lambda-babel-template)
+[![Known Vulnerabilities](https://snyk.io/test/npm/node-lambda-babel-template/badge.svg)](https://snyk.io/test/npm/node-lambda-babel-template)
+[![Build Status](https://travis-ci.org/flesch/node-lambda-babel-template.svg?branch=master)](https://travis-ci.org/flesch/node-lambda-babel-template)
 
 This project adds [webpack](http://webpack.github.io/) and [Babel](https://babeljs.io/) to **@motdotla**'s [node-lambda-template](https://github.com/motdotla/node-lambda-template) so you can run the lastest version of Javascript on [AWS Lambda](http://aws.amazon.com/lambda/).
 
