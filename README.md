@@ -18,10 +18,10 @@ This project adds [webpack](http://webpack.github.io/) and [Babel](https://babel
 To get started, download the latest template files:
 
 ```bash
-$ curl -o- https://io.fles.ch/node-lambda-babel-template/latest | bash
+$ curl -o- https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/nodelambdababeltemplate/latest | bash
 ```
 
-> Before running the command above, please take a look at <https://io.fles.ch/node-lambda-babel-template/latest> directly. Piping anything unknown through `bash` can be dangerous!
+> Before running the command above, please take a look at <https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/nodelambdababeltemplate/latest> directly. Piping anything unknown through `bash` can be dangerous!
 >
 > The install script is created using this: <https://gist.github.com/flesch/8ed6f47942350e858ebd3283e10f8a9b>.
 
@@ -29,7 +29,7 @@ $ curl -o- https://io.fles.ch/node-lambda-babel-template/latest | bash
 To download a specific release, use the following:
 
 ```bash
-$ curl -o- https://io.fles.ch/node-lambda-babel-template/v2.1.0 | bash
+$ curl -o- https://ribjyr1g9l.execute-api.us-east-1.amazonaws.com/nodelambdababeltemplate/v2.1.0 | bash
 ```
 
 Or clone this repository and remove the `.git` folder.
