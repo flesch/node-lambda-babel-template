@@ -5,7 +5,7 @@ const externals = require('webpack-node-externals');
 const pkg = require('./package.json');
 
 module.exports = {
-  entry: ['babel-polyfill', path.resolve(__dirname, pkg.main)],
+  entry: path.resolve(__dirname, pkg.main),
   output: {
     path: path.join(__dirname, 'dist'),
     libraryTarget: 'commonjs2',

@@ -2,14 +2,11 @@
 
 # node-lambda-babel-template
 
-[![NPM version](https://img.shields.io/npm/v/node-lambda-babel-template.svg)](https://www.npmjs.com/package/node-lambda-babel-template)
-[![Dependencies](https://david-dm.org/flesch/node-lambda-babel-template.svg)](https://david-dm.org/flesch/node-lambda-babel-template)
-[![Known Vulnerabilities](https://snyk.io/test/npm/node-lambda-babel-template/badge.svg)](https://snyk.io/test/npm/node-lambda-babel-template)
-[![Build Status](https://travis-ci.org/flesch/node-lambda-babel-template.svg?branch=master)](https://travis-ci.org/flesch/node-lambda-babel-template)
+[![NPM version](https://img.shields.io/npm/v/node-lambda-babel-template.svg)](https://www.npmjs.com/package/node-lambda-babel-template) [![Dependencies](https://img.shields.io/david/flesch/node-lambda-babel-template.svg)](https://david-dm.org/flesch/node-lambda-babel-template) [![Dev-dependencies](https://img.shields.io/david/dev/flesch/node-lambda-babel-template.svg)](https://david-dm.org/flesch/node-lambda-babel-template#info=devDependencies) [![Known Vulnerabilities](https://snyk.io/test/npm/node-lambda-babel-template/badge.svg)](https://snyk.io/test/npm/node-lambda-babel-template) [![Build Status](https://travis-ci.org/flesch/node-lambda-babel-template.svg?branch=master)](https://travis-ci.org/flesch/node-lambda-babel-template)
 
 This project adds [webpack](http://webpack.github.io/) and [Babel](https://babeljs.io/) to **@motdotla**'s [node-lambda-template](https://github.com/motdotla/node-lambda-template) so you can run the lastest version of Javascript on [AWS Lambda](http://aws.amazon.com/lambda/).
 
-[babel-polyfill](http://babeljs.io/docs/usage/polyfill/) and [babel-preset-es2015](http://babeljs.io/docs/plugins/preset-es2015/) are automatically included, but you can easily add additional presets and plugins.
+[babel-preset-latest](https://babeljs.io/docs/plugins/preset-latest/) is automatically included, but you can easily add additional presets and plugins.
 
 [webpack](http://webpack.github.io/) transforms `index.js` outputting to `dist/index.js`, which is then pushed up to [AWS Lambda](http://aws.amazon.com/lambda/) with [node-lambda](https://github.com/motdotla/node-lambda).
 
