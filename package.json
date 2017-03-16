@@ -7,7 +7,7 @@
     "url": "https://github.com/flesch/node-lambda-babel-template/issues"
   },
   "devDependencies": {
-    "babel-core": "^6.18.2",
+    "babel-core": "^6.23.0",
     "babel-loader": "^6.2.8",
     "babel-preset-latest": "^6.16.0",
     "json-loader": "^0.5.4",
