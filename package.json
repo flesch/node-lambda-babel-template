@@ -1,7 +1,7 @@
 {
   "name": "node-lambda-babel-template",
   "description": "An AWS Lambda boilerplate with ES2015 support.",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "author": "John Flesch <john@fles.ch>",
   "bugs": {
     "url": "https://github.com/flesch/node-lambda-babel-template/issues"
@@ -12,7 +12,7 @@
     "babel-preset-latest": "^6.16.0",
     "json-loader": "^0.5.4",
     "node-lambda": "^0.8.11",
-    "webpack": "^1.13.3",
+    "webpack": "^2.2.1",
     "webpack-node-externals": "^1.5.4"
   },
   "homepage": "https://github.com/flesch/node-lambda-babel-template#readme",
